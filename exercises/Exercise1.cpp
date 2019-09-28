@@ -30,17 +30,20 @@ bool Exercise1::MakeMove(int x, int y)
 
 Exercise1::Exercise1()
 {
-	string input;
-	vector<int> parsedInput = vector<int>();
+	while (true)
+	{
+		string input;
+		vector<int> parsedInput = vector<int>();
 
-	getline(cin, input);
+		getline(cin, input);
 
-	std::istringstream iss(input);
+		std::istringstream iss(input);
 
-	int n;
-	while (iss >> n) parsedInput.push_back(n);
-
-	cout << (MakeMove(parsedInput[0], parsedInput[1]) ? "First" : "Second");
+		int n;
+		while (iss >> n) parsedInput.push_back(n);
+		if (parsedInput.size() > 1)
+			cout << (MakeMove(parsedInput[0], parsedInput[1]) ? "First" : "Second") << endl;
+	}
 }
 
 
