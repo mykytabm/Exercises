@@ -6,6 +6,9 @@
 #include <string>
 
 
+
+
+
 /**
 * Implement a program in C++ using pointers and arrays to read a number N of integers,
 * then print the N numbers sorted by value (higher values first).
@@ -38,9 +41,10 @@ void ReadAndSortNumbers()
 */
 void ReadStringsAndPrintMaxSize()
 {
-	char input[50] = "";
+	char input[31] = "";
 	std::string s = "";
 	int lengthCounter[31];
+
 
 	for (int i = 0; i < 31; i++)
 	{
@@ -71,11 +75,9 @@ void ReadStringsAndPrintMaxSize()
 }
 
 
-
-
 int main()
 {
-	ReadStringsAndPrintMaxSize();
+	
 	return 0;
 }
 
