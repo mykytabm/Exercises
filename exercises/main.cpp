@@ -77,7 +77,19 @@ void ReadStringsAndPrintMaxSize()
 
 int main()
 {
-	
+	int n = 0;
+	std::string s = "";
+	std::getline(std::cin, s);
+	std::cout << s.length() << std::endl;
+	std::cout << s << std::endl;
+	for (size_t i = 0; i < s.length(); i++)
+	{
+		if (s[i] != ' ') {
+			n += s[i] - '0';
+		}
+	}
+
+	std::cout << "sum is " << n;
 	return 0;
 }
 

@@ -1,0 +1,12 @@
+#pragma once
+#include "Util.h"
+class {
+
+private: bool MakeMove(int x, int y);
+public:
+	Exercise1();
+	~Exercise1();
+};
+
+//
+xd
